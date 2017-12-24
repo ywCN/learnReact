@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
@@ -13,13 +13,15 @@ const API_KEY = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 // create a new component. 
 // this component should create some HTML.
 // this component should be responsible for fetching data
-const App = () => {
-    return (
-        <div>
-            <SearchBar />
-        </div>
-    );
-};
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <SearchBar />
+            </div>
+        );
+    }
+}
 
 // Take this component's generated HTML and put it
 // on the page (in the DOM)
