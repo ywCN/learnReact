@@ -5,8 +5,10 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
     // event handler
     // on + Element Name + Event Name
-    onInputChange() {
-
+    // event can be named different
+    // .target.value access value of input
+    onInputChange(event) {
+        console.log(event.target.value);
     }
 
     render() {
