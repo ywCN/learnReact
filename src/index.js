@@ -7,7 +7,11 @@ const API = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 // create a new component. 
 // this component should create some HTML.
 const App = () => {
-    return <div>mie!</div>;
+    return (
+        <div>
+            <SearchBar />
+        </div>
+    );
 };
 
 // Take this component's generated HTML and put it
