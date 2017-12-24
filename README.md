@@ -18,3 +18,12 @@
 ## In React, when user types, the state changes FIRST, THEN the view will change according to current state.
 
 ## Downward Dataflow: Only the most parent component is responsible for fetching data.
+
+
+
+
+
+
+
+
+#### I got the search result in this version!!!!
