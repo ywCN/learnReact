@@ -14,3 +14,5 @@
 ### Before we use the state of a component, we need to initialize the state object.
 ### Each instance of class component has its own copy of state.
 #### To init state: super(props); this.state = { k: v };
+
+## In React, when user types, the state changes FIRST, THEN the view will change according to current state.
