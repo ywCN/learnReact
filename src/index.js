@@ -14,6 +14,12 @@ const API_KEY = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 // this component should create some HTML.
 // this component should be responsible for fetching data
 class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { videos: [] }; // [] for list of Objects
+    }
+
     render() {
         return (
             <div>
