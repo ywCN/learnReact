@@ -11,6 +11,13 @@ class SearchBar extends Component {
     //     console.log(event.target.value);
     // }
 
+    // this is how we define/init state in a class-based component
+    constructor(props) {
+        super(props);
+
+        this.state = { term: '' };
+    }
+
     render() {
         return <input onChange={event => console.log(event.target.value)} />;
     };
