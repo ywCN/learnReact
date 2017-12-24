@@ -15,6 +15,9 @@ class SearchBar extends Component {
     constructor(props) {
         super(props);
 
+        // only inside the constructor function
+        // do we change state like this.state
+        // in other context, we use this.setState()
         this.state = { term: '' };
     }
 
