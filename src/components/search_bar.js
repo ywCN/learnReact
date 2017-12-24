@@ -7,12 +7,12 @@ class SearchBar extends Component {
     // on + Element Name + Event Name
     // event can be named different
     // .target.value access value of input
-    onInputChange(event) {
-        console.log(event.target.value);
-    }
+    // onInputChange(event) {
+    //     console.log(event.target.value);
+    // }
 
     render() {
-        return <input onChange={this.onInputChange} />;
+        return <input onChange={event => console.log(event.target.value)} />;
     };
 }
 
