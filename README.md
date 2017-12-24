@@ -12,3 +12,5 @@
 ### Whenever a component's state changes, the component immediately re-renders.
 ### And also forces all its children to re-render as well.
 ### Before we use the state of a component, we need to initialize the state object.
+### Each instance of class component has its own copy of state.
+#### To init state: super(props); this.state = { k: v };
