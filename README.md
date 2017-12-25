@@ -12,7 +12,7 @@
 - use destructuring instead of props
   - Before: `const VideoList = (props) => {`
   - After: `const VideoList = ({video}) => {`
-- merge key and value when they are the same
+- merge key and value when they are the same, (syntax sugar for compression)
   - Before: `this.setState({ videos: videos});`
   - After: `this.setState({ videos });`
 - Whenever need to reference a javascript variable in JSX, {} is required.
@@ -21,6 +21,11 @@
 ## Components
 - functional component: is a function produce JSX
 - class component: can aware itself when it is renderred
+- Passing Props
+  - props is passed to child component as object
+  - the object will be accessible by child component
+  - passing object is like creating new entries in the props object of child component which is passed to
+  - as a result, we can use destructuring to retrive the informaion in the object
 
 ## State
 - Each class based component has its own state object.
