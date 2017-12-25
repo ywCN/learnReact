@@ -21,6 +21,7 @@
 ## Components
 - functional component: is a function produce JSX
 - class component: can aware itself when it is renderred
+  - In class component, state is init in constructor function.
 - Passing Props
   - props is passed to child component as object
   - the object will be accessible by child component
