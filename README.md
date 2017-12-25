@@ -1,7 +1,11 @@
 # learn React with Redux
+## [React Doc](https://reactjs.org/docs/hello-world.html)
 
-## npm start
-## http://localhost:8080/
+
+## How to start website
+- npm install
+- npm start
+- open browerser and navigate to http://localhost:8080/
 
 
 ## ES6 Trick
