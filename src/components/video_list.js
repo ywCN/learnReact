@@ -5,6 +5,8 @@ import VideoListItem from './video_list_item';
 const VideoList = (props) => {
     const videoItems = props.videos.map((video) => {
         // etag is in the object, it is a unique id
+        // key is required by React
+        // Each child in an array or iterator should have a unique "key" prop.
         return <VideoListItem 
             key={video.etag}
             video={video} 
