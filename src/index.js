@@ -16,6 +16,7 @@ const API_KEY = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 // this component should create some HTML.
 // this component should be responsible for fetching data
 class App extends Component {
+    // init
     constructor(props) {
         super(props);
 
@@ -23,7 +24,7 @@ class App extends Component {
             videos: [],  // [] for list of Objects
             selectedVideo: null // null for init
         };
-        // init
+        // still need to init first video
         this.videoSearch('surfboards');
     }
 
