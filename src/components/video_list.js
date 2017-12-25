@@ -8,9 +8,9 @@ const VideoList = (props) => {
         // key is required by React
         // Each child in an array or iterator should have a unique "key" prop.
         return <VideoListItem 
-            key={video.etag}
-            video={video} 
-            />
+                    key={video.etag}
+                    video={video} 
+                />
     });
     return (
         // use className to avoid conflict
