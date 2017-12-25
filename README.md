@@ -23,7 +23,8 @@
 
 ## Downward Dataflow: Only the most parent component is responsible for fetching data.
 
-
+## Whenever need to reference a javascript variable in JSX, {} is required.
+- for example: src={imageUrl}
 
 
 
