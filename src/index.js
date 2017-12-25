@@ -39,7 +39,10 @@ class App extends Component {
                 <SearchBar />
                 <VideoDetail video={this.state.selectedVideo} />
                 {/* pass props to VideoList */}
-                <VideoList videos={this.state.videos}/>
+                <VideoList
+                    onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                    videos={this.state.videos}
+                />
                 
             </div>
         );
