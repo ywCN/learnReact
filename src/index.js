@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
 
 const API_KEY = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 
@@ -20,7 +21,7 @@ class App extends Component {
         this.state = { videos: [] }; // [] for list of Objects
         YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
             // this.setState({ videos: videos});
-            this.setState({ videos}); // ES6, when key and value are same
+            this.setState({ videos }); // ES6, when key and value are same
         });
     }
 
@@ -28,6 +29,9 @@ class App extends Component {
         return (
             <div>
                 <SearchBar />
+                {/* pass props to VideoList */}
+                <VideoList videos={this.state.videos}/>
+                
             </div>
         );
     }
