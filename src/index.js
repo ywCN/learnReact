@@ -19,7 +19,11 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { videos: [] }; // [] for list of Objects
+        this.state = { 
+            videos: [],  // [] for list of Objects
+            selectedVideo: null // null for init
+        };
+
         YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
             // this.setState({ videos: videos});
             this.setState({ videos }); // ES6, when key and value are same
@@ -30,7 +34,7 @@ class App extends Component {
         return (
             <div>
                 <SearchBar />
-                <VideoDetail video={this.state.videos[0]} />
+                <VideoDetail video={this.state.selectedVideo} />
                 {/* pass props to VideoList */}
                 <VideoList videos={this.state.videos}/>
                 
