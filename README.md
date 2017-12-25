@@ -11,6 +11,8 @@
 - merge key and value when they are the same
   - Before: `this.setState({ videos: videos});`
   - After: `this.setState({ videos });`
+- Whenever need to reference a javascript variable in JSX, {} is required.
+  - for example: `<VideoList videos={this.state.videos}/>`
 
 ## Components
 - functional component: is a function produce JSX
@@ -29,10 +31,8 @@
 ## In React, when user types, the state changes FIRST, THEN the view will change according to current state. 
 - During this process, no instance of class (objects) are created, so the conctructor will be executed upon creation of object.
 
-## Downward Dataflow: Only the most parent component is responsible for fetching data.
+## Downward Dataflow of React: Only the most parent component is responsible for fetching data. Like the LCA.
 
-## Whenever need to reference a javascript variable in JSX, {} is required.
-- for example: src={imageUrl}
 
 
 
