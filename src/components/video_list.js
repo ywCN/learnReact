@@ -4,7 +4,11 @@ import VideoListItem from './video_list_item';
 // accept props from App.js
 const VideoList = (props) => {
     const videoItems = props.videos.map((video) => {
-        return <VideoListItem video={video} />
+        // etag is in the object, it is a unique id
+        return <VideoListItem 
+            key={video.etag}
+            video={video} 
+            />
     });
     return (
         // use className to avoid conflict
