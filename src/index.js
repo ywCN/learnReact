@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
@@ -16,7 +17,7 @@ const API_KEY = 'AIzaSyAKRu9Q1NFeewHGbsC85jAXa-Cwkm3avZQ';
 // this component should create some HTML.
 // this component should be responsible for fetching data
 class App extends Component {
-    // init
+    // init state
     constructor(props) {
         super(props);
 
@@ -38,9 +39,11 @@ class App extends Component {
     }
 
     render() {
+        // returns a new function that can only be called every 300 ms
+        const videoSearch = _.deboune((term) => { this.videoSearch(term) }, 300);
         return (
             <div>
-                <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+                <SearchBar onSearchTermChange={videoSearch} />
                 <VideoDetail video={this.state.selectedVideo} />
                 {/* pass props to VideoList */}
                 <VideoList
