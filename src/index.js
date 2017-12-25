@@ -18,6 +18,9 @@ class App extends Component {
         super(props);
 
         this.state = { videos: [] }; // [] for list of Objects
+        YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
+            this.setState({ videos: data});
+        });
     }
 
     render() {
