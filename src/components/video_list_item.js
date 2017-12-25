@@ -5,7 +5,7 @@ import React from 'react';
 //     const video = props.video;
 
 // ES6
-const VideoListItem = ({video}}) => {
+const VideoListItem = ({video}) => {
     // console.log(video);
     return (
         <li className="list-group-item">
