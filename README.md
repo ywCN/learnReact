@@ -22,6 +22,7 @@
 - functional component: is a function produce JSX
 - class component: can aware itself when it is renderred
   - In class component, state is init in constructor function.
+    - And only in this situation can state be manipulated by using `state={...}`
 - Passing Props
   - props is passed to child component as object
   - the object will be accessible by child component
