@@ -18,8 +18,9 @@ class App extends Component {
         super(props);
 
         this.state = { videos: [] }; // [] for list of Objects
-        YTSearch({key: API_KEY, term: 'surfboards'}, (data) => {
-            this.setState({ videos: data});
+        YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+            // this.setState({ videos: videos});
+            this.setState({ videos}); // ES6, when key and value are same
         });
     }
 
