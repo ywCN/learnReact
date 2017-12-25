@@ -40,7 +40,7 @@ class App extends Component {
 
     render() {
         // returns a new function that can only be called every 300 ms
-        const videoSearch = _.deboune((term) => { this.videoSearch(term) }, 300);
+        const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
         return (
             <div>
                 <SearchBar onSearchTermChange={videoSearch} />
