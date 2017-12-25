@@ -15,7 +15,7 @@ const VideoListItem = ({video}}) => {
                 </div>
 
                 <div className="media-body">
-                    <img className="media-heading">  
+                    <div className="media-heading"></div>
                 </div>
             </div>
         </li>
