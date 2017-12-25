@@ -1,6 +1,12 @@
 import React from 'react';
 
 const VideoDetail = ({video}) => {
+    // since some information cannot be fetched fast enough
+    // for child components, we need to check by using code below
+    if (!video) {
+        return <div>Loading...</div>;
+    }
+
     const videoId = video.id.videoId;
     // this is the pattern of youtube video URL, so we can creat one
     // const url = 'https://www.youtube.com/embed/' + videoId;
