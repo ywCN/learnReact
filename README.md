@@ -35,7 +35,9 @@
 - And also forces all its children to re-render as well.
 - Before we use the state of a component, we need to initialize the state object.
 - Each instance of class component has its own copy of state.
-  - To init state: super(props); this.state = { k: v };
+  - To init state: 
+    - `super(props);`
+    - `this.state = {...};`
 - if we do not need a state, we do the plain functional component.
   - if you don't need to really mess with state or the component lifecycle, and your component is more display-related. It's nicer and more concise to read when you can just export a functional component, rather than writing out a full class component.
 
