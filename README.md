@@ -4,6 +4,14 @@
 ## http://localhost:8080/
 
 
+## ES6 Trick
+- use destructuring instead of props
+  - Before: `const VideoList = (props) => {`
+  - After: `const VideoList = ({video}) => {`
+- merge key and value when they are the same
+  - Before: `this.setState({ videos: videos});`
+  - After: `this.setState({ videos });`
+
 ## Components
 - functional component: is a function produce JSX
 - class component: can aware itself when it is renderred
