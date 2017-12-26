@@ -1,4 +1,4 @@
-# learn React with Redux
+# A simple site like youtube. User can search for video and play video.
 ## [React Doc](https://reactjs.org/docs/hello-world.html)
 
 
