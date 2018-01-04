@@ -1,4 +1,4 @@
-# [Simple YouTube Website](https://youtube-yw.herokuapp.com)
+# Visit **[Simple YouTube Website](https://youtube-yw.herokuapp.com)**
 
 ## Description:
 A mini YouTube website utilizing YouTube API to search and play videos.
