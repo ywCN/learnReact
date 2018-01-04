@@ -17,7 +17,7 @@ A mini YouTube website utilizing YouTube API to search and play videos.
 ## Tech Stack:
 - Node.js
 - React
-- ReactDOM
+  - React-DOM
 - Express.js
 - Babel
 - Webpack
