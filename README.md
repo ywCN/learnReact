@@ -4,21 +4,21 @@
 A mini YouTube website utilizing YouTube API to search and play videos.
 
 ## Setup:
-1. git clone 
-2. cd to project folder
-3. npm install
-4. npm start
+1. `git clone https://github.com/ywCN/mini-YouTube.git`
+2. `cd mini-YouTube`
+3. `npm install`
+4. `npm run dev`
 5. open browser and navigate to http://localhost:8080/
 
 ## Features:
-1. Search videos without tapping search button
-2. Play videos in browser
+- Search videos without tapping search button
+- Play videos in browser
 
 ## Tech Stack:
-1. React
-2. ReactDOM
-3. Express
-4. Babel
-5. Webpack
-6. lodash
-7. YouTube API (YTSearch)
+- React
+- ReactDOM
+- Express
+- Babel
+- Webpack
+- lodash
+- YouTube API (YTSearch)
