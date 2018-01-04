@@ -15,9 +15,10 @@ A mini YouTube website utilizing YouTube API to search and play videos.
 - Play videos in browser
 
 ## Tech Stack:
+- Node.js
 - React
 - ReactDOM
-- Express
+- Express.js
 - Babel
 - Webpack
 - lodash
